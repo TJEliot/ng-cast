@@ -14,12 +14,14 @@ angular.module('video-player')
           videoEmbeddable: 'true'
         } 
       }).then(function successCallback(data) {
+        console.log('is this visible');
+        console.log(data);
         if (callback) {
           console.log(data);
-          callback(data.items);
+          callback(data);
         }
       }, function errorCallback(response) {
-        console.log(response);
+        console.error(response);
       });
     // $.ajax({
     //   url: url,

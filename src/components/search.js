@@ -2,7 +2,8 @@ angular.module('video-player')
   .component('search', {
     bindings: {
       search: '=',
-      result: '<'
+      result: '<',
+      setter: '='
     },
     templateUrl: 'src/templates/search.html'
   });
