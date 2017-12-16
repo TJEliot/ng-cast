@@ -7,9 +7,10 @@ angular.module('video-player')
     this.search='';
     this.videos = exampleVideoData;
     this.currentVideo = this.videos[0];
-    this.url = `https://www.youtube.com/embed/${this.currentVideo.id.videoId}`;
-    this.selectVideo = function() {
-      console.log('a');
+    this.selectVideo = function(video) {
+      var v = video;
+      setTimeout(function(){console.log(v);}, 500);
+      
       this.currentVideo = video;
     };
     this.searchResults = function(query) {

@@ -1,8 +1,7 @@
 angular.module('video-player')
 .component('videoPlayer', {
   bindings: {
-    video: '<',
-    url: '<'
+    video: '<'
   },
   controller: function() {
   },
