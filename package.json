@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "live-server | babel . --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline --watch | live-server --open=./SpecRunner.html --port=8081",
+    "start": "live-server",
     "test": "karma start",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
   },
